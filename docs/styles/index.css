@@ -190,7 +190,11 @@ header #navigation a {
     gap: 0.7rem;
 }
 
-header #navigation > p{
+header #navigation > a {
+    padding: 1rem;
+}
+
+header #navigation p{
     margin-top: 0;
 }
 
@@ -287,6 +291,7 @@ article {
 
 #strengthWeak>div:not(.neonLights) {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 3rem;
 }
