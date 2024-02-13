@@ -162,7 +162,8 @@ header nav {
     position: absolute;
     background: black;
     padding: 3rem;
-    height: 30rem;
+    height: 100vh;
+    position: fixed;
 }
 
 header ul {
@@ -230,7 +231,8 @@ article {
     box-shadow: 0 0 0.4rem 0.1rem rgb(194, 49, 219),
         0 0 0.1rem 0.1rem rgb(194, 49, 219),
         0 0 1rem 0.1rem rgb(194, 49, 219);
-    animation: onOffPurlple 1.5s infinite;
+    transition: 2s;
+    transition-delay: 400ms;
 }
 
 #strengthWeak > div:not(.neonLights) {

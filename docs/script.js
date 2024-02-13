@@ -41,3 +41,25 @@ hamburgerOpen.addEventListener('click', () => {
 hamburgerSluiten.addEventListener('click', () => {
     navigationList.style.transform = 'translateX(50rem)';
 })
+
+
+// intersection observer api
+
+const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+        const meterElement = entry.target;
+        if(entry.isIntersecting) {
+            meterElement.value = meterElement.dataset.value;
+        } else {
+            meterElement.value = 0;
+        }
+       
+    }
+    )
+}, { threshold: 1 })
+
+const target = document.querySelectorAll('meter');
+
+target.forEach((item) => {
+    observer.observe(item);
+})
