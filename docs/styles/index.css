@@ -1,3 +1,331 @@
+@font-face {
+    font-family: mainFont;
+    src: url(../fonts/microextendflf.ttf);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+*:focus-visible {
+    outline: solid rgb(229, 255, 0) 0.1rem;
+    padding: 0.2rem;
+    border-radius: 0.2rem;
+    box-shadow: 0.1rem 0.1rem 0.3rem rgb(229, 255, 0), -0.1rem -0.1rem 0.3rem rgb(229, 255, 0), -0.2rem -0.2rem 0.3rem rgb(229, 255, 0), 0.2rem 0.2rem 0.3rem rgb(229, 255, 0),
+    -0.2rem 0.2rem 0.3rem rgb(229, 255, 0), 0.2rem -0.2rem 0.3rem rgb(229, 255, 0);
+}
+
+
 body {
-    background-color: red;
+    background-color: rgb(36, 36, 36);
+}
+
+h1,
+h2,
+h3,
+p,
+a,
+label,
+li {
+    color: white;
+    font-family: mainFont;
+
+}
+
+.neonLights {
+    height: 0.2rem;
+    width: 100%;
+    background-color: white;
+}
+
+.purple {
+    box-shadow: 0 0 0.4rem 0.1rem rgb(194, 49, 219),
+        0 0 0.7rem 0.1rem rgb(194, 49, 219),
+        0 0 1rem 0.1rem rgb(194, 49, 219);
+    animation: onOffPurlple 1.5s infinite;
+}
+
+
+.blue {
+    box-shadow: 0 0 0.4rem 0.1rem rgb(49, 128, 219),
+        0 0 0.7rem 0.1rem rgb(49, 128, 219),
+        0 0 1rem 0.1rem rgb(49, 128, 219);
+    animation: onOffBlue 1.5s infinite;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+#intro .blue {
+    animation-delay: 500ms;
+}
+
+#stats .blue {
+    animation-duration: 1s;
+}
+
+#strengthWeak .blue {
+    animation-direction: reverse;
+}
+
+#music .blue {
+    animation-direction: alternate-reverse;
+}
+
+@keyframes onOffPurlple {
+
+    0%,
+    18%,
+    22%,
+    25%,
+    53%,
+    57%,
+    100% {
+        box-shadow: 0 0 0.4rem 0.1rem rgb(194, 49, 219),
+            0 0 0.7rem 0.1rem rgb(194, 49, 219),
+            0 0 1rem 0.1rem rgb(194, 49, 219);
+    }
+
+    20%,
+    24%,
+    55% {
+        box-shadow: none;
+    }
+}
+
+@keyframes onOffBlue {
+
+    0%,
+    18%,
+    22%,
+    25%,
+    53%,
+    57%,
+    100% {
+        box-shadow: 0 0 0.4rem 0.1rem rgb(49, 128, 219),
+            0 0 0.7rem 0.1rem rgb(49, 128, 219),
+            0 0 1rem 0.1rem rgb(49, 128, 219);
+    }
+
+    20%,
+    24%,
+    55% {
+        box-shadow: none;
+    }
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 0.3rem 0.3rem 0.7rem rgb(194, 49, 219);
+    text-transform: uppercase;
+}
+
+h3 {
+    margin-top: 0;
+}
+
+header {
+    /* display: flex;
+    align-items: center;
+    height: 100vh;
+    width: 100%; */
+}
+
+header #headingOne {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+header #headingOne div {
+    width: 100%;
+}
+
+header #navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    position: relative;
+}
+
+header #navigation a {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+header #navigation span {
+    display: inline-block;
+    width: 3rem;
+    height: 0.3rem;
+    background-color: white;
+}
+
+header nav {
+    transform: translateX(50rem);
+    transition: 1s;
+    position: absolute;
+    background: black;
+    padding: 3rem;
+    height: 30rem;
+}
+
+header ul {
+    list-style: none;
+}
+
+header ul li {
+    margin-bottom: 2rem;
+}
+
+main p {
+    max-width: 30rem;
+}
+
+h2 {
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#intro img {
+    width: 9rem;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#stats {
+    display: flex;
+    flex-direction: column;
+}
+
+#stats label {
+    display: inline-block;
+    width: 5rem;
+}
+
+#stats div:not(.neonLights) {
+    margin-bottom: 1rem;
+}
+
+#stats meter {
+    width: 15rem;
+    border-radius: 0;
+    border: 1px solid #f30000;
+}
+
+#stats meter::-webkit-meter-bar {
+    box-shadow: 0 2px 3px rgb(0 0 0 / 20%) inset;
+    border-radius: 3px;
+    overflow: visible;
+}
+
+#stats meter::-webkit-meter-optimum-value {
+    background-color: rgb(194, 49, 219);
+    box-shadow: 0 0 0.4rem 0.1rem rgb(194, 49, 219),
+        0 0 0.1rem 0.1rem rgb(194, 49, 219),
+        0 0 1rem 0.1rem rgb(194, 49, 219);
+    animation: onOffPurlple 1.5s infinite;
+}
+
+#strengthWeak > div:not(.neonLights) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+#strengthWeak ul {
+    border: solid red;
+    gap: 3rem;
+    padding: 3rem;
+    border-radius: 1rem;
+    margin: auto;
+    box-shadow: 0 0 0.4rem 0.1rem red,
+        0 0 0.1rem 0.1rem red,
+        0 0 1rem 0.1rem red;
+}
+
+#strengthWeak div div:nth-of-type(1) ul {
+    border: solid green;
+    box-shadow: 0 0 0.4rem 0.1rem green,
+        0 0 0.1rem 0.1rem green,
+        0 0 1rem 0.1rem green;
+}
+
+#music ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    overflow: auto;
+    width: 80%;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+#music li {
+    width: 12rem;
+    scroll-snap-align: start;
+}
+
+#music img {
+    width: 12rem;
+    transition: 1s;
+}
+
+#music li>div {
+    position: relative;
+    width: 12rem;
+    height: 12rem;
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
+    transition: 1s;
+}
+
+#music li>div:hover,
+#music li>div:focus-within {
+    transform: rotateY(180deg);
+}
+
+#music li>div>div,
+#music li>div>img {
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+#music li>div>div {
+    transform: rotateY(180deg);
+    background: rgba(128, 128, 128);
+}
+
+#music li>div>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#music li div div {
+    width: 100%;
+    height: 100%;
+}
+
+#socials img{
+    width: 3rem;
+}
+
+#socials div:not(.neonLights){
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
 }

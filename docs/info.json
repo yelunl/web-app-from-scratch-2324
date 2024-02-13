@@ -1,0 +1,31 @@
+{
+  "avatar_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/133.png",
+  "firstName": "Yeliz",
+  "lastName": "Unlu",
+  "age": 24,
+  "city": "Zaandam",
+  "hobbies": ["movies", "fitness"],
+  "truthAndLies": ["", "", ""],
+  "favoritePokemon": "Eevee",
+  "bio": "Hallo ik ben Yeliz, ....",
+  "stats": [
+    { "title": "HTML", "value": 80 },
+    { "title": "CSS", "value": 70 },
+    { "title": "JavaScript", "value": 60 },
+    { "title": "Design", "value": 50 },
+    { "title": "Git", "value": 50 }
+  ],
+  "strengths": [
+    "Creativity",
+    "Teamwork",
+    "Eager to learn"
+  ],
+  "weaknesses": ["Procrastination", "Perfectionist"],
+  "habitat": [
+    { "title": "Home", "value": "Zaandam" },
+    { "title": "GitHub", "value": "https" },
+    { "title": "LinkedIn", "value": "https" },
+    { "title": "Twitter", "value": "https" },
+    { "title": "Instagram", "value": "https" }
+  ]
+}

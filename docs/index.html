@@ -1,14 +1,118 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, min=" 0" maximum-scale=1.0,
+        minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Web App From Scratch 23-24</title>
+    <title>Portfolio Yeliz Unlu</title>
     <link rel="stylesheet" href="./styles/index.css">
+    <script src="./script.js" async></script>
 </head>
+
 <body>
-<h1>Hello World</h1>
+    <header>
+        <div id="navigation">
+            <a href="#" aria-expanded="false" aria-controls="menuList">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            <p>Menu</p>
+            <nav id="menuList" aria-hidden="true">
+                <a href="#">sluiten</a>
+                <ul>
+                    <li><a href="#intro">About me</a></li>
+                    <li><a href="#stats">My Skills</a></li>
+                    <li><a href="#strengthWeak">Strengths and weaknesses</a></li>
+                    <li><a href="#music">Music</a></li>
+                    <li><a href="#socials">Socials</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="headingOne">
+            <div>
+                <div class="neonLights purple"></div>
+                <h1 aria-label="Who am i?">Who am i?</h1>
+                <div class="neonLights purple"></div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <article id="intro">
+            <div class="neonLights blue"></div>
+            <h2>My name is <span>Yeliz Unlu</span></h2>
+            <img src="./images/eevee.png" alt="Eevee from pokemon">
+            <p>My name is yeliz Unlu my hobbies are fitness, watching movies and series. I enjoy going outside taking a
+                walk
+                in nature. I am study CMD and hopefully become a front-end developer one day. </p>
+        </article>
+
+        <article id="stats">
+            <div class="neonLights blue"></div>
+            <h2>My skills</h2>
+            <div>
+                <label for="html">HTML</label>
+                <meter id="html" min="0" max="100" value="90">90%</meter>
+            </div>
+            <div>
+                <label for="css">CSS</label>
+                <meter id="css" min="0" max="100" value="80">80%</meter>
+            </div>
+            <div>
+                <label for="js">JS</label>
+                <meter id="js" min="0" max="100" value="70">70%</meter>
+            </div>
+            <div>
+                <label for="design">Design</label>
+                <meter id="design" min="0" max="100" value="60">60%</meter>
+            </div>
+            <!-- <div class="neonLights blue"></div> -->
+        </article>
+
+        <article id="strengthWeak">
+            <div class="neonLights blue"></div>
+            <h2>My strengths and weaknesses</h2>
+            <div>
+                <div>
+                    <h3>Strength</h3>
+                    <ul>
+                        <li>Creativity</li>
+                        <li>Teamwork</li>
+                        <li>Eager to learn</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Weakness</h3>
+                    <ul>
+                        <li>Procrastination</li>
+                        <li>Perfectionist</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- <div class="neonLights blue"></div> -->
+        </article>
+
+        <article id="music">
+            <div class="neonLights blue"></div>
+            <h2>My favorite music</h2>
+            <ul></ul>
+        </article>
+
+        <article id="socials">
+            <div class="neonLights blue"></div>
+            <h2>My socials</h2>
+            <div>
+                <a href="https://github.com/yelunl"><img src="./images/github.png" alt="github logo"></a>
+                <a href="https://nl.linkedin.com"><img src="./images/linkedin.png" alt="linkedIn logo"></a>
+                <a href="https://www.instagram.com"><img src="./images/instagram.png" alt="instagram logo"></a>
+            </div>
+        </article>
+
+
+    </main>
 </body>
+
 </html>
