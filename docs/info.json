@@ -7,6 +7,7 @@
   "hobbies": ["movies", "fitness"],
   "truthAndLies": ["", "", ""],
   "favoritePokemon": "Eevee",
+  "favoritePokemonAvatar": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/133.png",
   "bio": "Hallo ik ben Yeliz, ....",
   "stats": [
     { "title": "HTML", "value": 80 },
