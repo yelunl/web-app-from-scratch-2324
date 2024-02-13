@@ -225,8 +225,13 @@ header nav {
     position: fixed;
 }
 
+header nav a {
+    text-decoration: none;
+}
+
 header ul {
     list-style: none;
+    margin-top: 3rem;
 }
 
 header ul li {

@@ -36,10 +36,14 @@ const navigationList = document.querySelector('header nav');
 
 hamburgerOpen.addEventListener('click', () => {
     navigationList.style.transform = 'translateX(0)';
+    hamburgerOpen.setAttribute('aria-expanded', 'true');
+    navigationList.setAttribute('aria-hidden', 'false');
 })
 
 hamburgerSluiten.addEventListener('click', () => {
     navigationList.style.transform = 'translateX(50rem)';
+    hamburgerOpen.setAttribute('aria-expanded', 'false');
+    navigationList.setAttribute('aria-hidden', 'true');
 })
 
 
