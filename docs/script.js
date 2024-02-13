@@ -52,8 +52,7 @@ const observer = new IntersectionObserver((entries, observer) => {
             meterElement.value = meterElement.dataset.value;
         } else {
             meterElement.value = 0;
-        }
-       
+        }       
     }
     )
 }, { threshold: 1 })

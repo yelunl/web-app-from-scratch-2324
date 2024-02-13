@@ -12,7 +12,7 @@ html {
     padding: 0.2rem;
     border-radius: 0.2rem;
     box-shadow: 0.1rem 0.1rem 0.3rem rgb(229, 255, 0), -0.1rem -0.1rem 0.3rem rgb(229, 255, 0), -0.2rem -0.2rem 0.3rem rgb(229, 255, 0), 0.2rem 0.2rem 0.3rem rgb(229, 255, 0),
-    -0.2rem 0.2rem 0.3rem rgb(229, 255, 0), 0.2rem -0.2rem 0.3rem rgb(229, 255, 0);
+        -0.2rem 0.2rem 0.3rem rgb(229, 255, 0), 0.2rem -0.2rem 0.3rem rgb(229, 255, 0);
 }
 
 
@@ -57,6 +57,65 @@ li {
 
 #intro .blue {
     animation-delay: 500ms;
+}
+
+h2>span {
+    border: solid rgb(194, 49, 219) 0.3rem;
+    border-radius: 1rem;
+    box-shadow: 0rem 0rem 0.1rem, 0.1rem 0.1rem 0.5rem, -0.1rem -0.1rem 0.7rem;
+    width: fit-content;
+    margin-top: 1rem;
+    padding: 2rem;
+    display: block;
+    color: rgb(194, 49, 219);
+    text-shadow: 0rem 0rem 0.1rem, 0.1rem 0.1rem 0.5rem, -0.1rem -0.1rem 0.7rem
+}
+
+h2>span>span {
+    text-shadow: 0rem 0rem 0.1rem, 0.1rem 0.1rem 0.5rem, -0.1rem -0.1rem 0.7rem;
+    animation: blink 3s infinite;
+}
+
+@keyframes blink {
+    78% {
+        color: rgb(194, 49, 219);
+        text-shadow: 0rem 0rem 0.1rem, 0.1rem 0.1rem 0.5rem, -0.1rem -0.1rem 0.7rem;
+    }
+
+    79% {
+        color: #333;
+    }
+
+    80% {
+
+        text-shadow: none;
+    }
+
+    81% {
+        color: rgb(194, 49, 219);
+        text-shadow: 0rem 0rem 0.1rem, 0.1rem 0.1rem 0.5rem, -0.1rem -0.1rem 0.7rem;
+
+    }
+
+    82% {
+        color: #333;
+        text-shadow: none;
+    }
+
+    83% {
+        color: rgb(194, 49, 219);
+        text-shadow: 0rem 0rem 0.1rem, 0.1rem 0.1rem 0.5rem, -0.1rem -0.1rem 0.7rem;
+    }
+
+    92% {
+        color: #333;
+        text-shadow: none;
+    }
+
+    92.5% {
+        color: rgb(194, 49, 219);
+        text-shadow: 0rem 0rem 0.1rem, 0.1rem 0.1rem 0.5rem, -0.1rem -0.1rem 0.7rem;
+    }
 }
 
 #stats .blue {
@@ -235,7 +294,7 @@ article {
     transition-delay: 400ms;
 }
 
-#strengthWeak > div:not(.neonLights) {
+#strengthWeak>div:not(.neonLights) {
     display: flex;
     flex-wrap: wrap;
     gap: 3rem;
@@ -315,11 +374,11 @@ article {
     height: 100%;
 }
 
-#socials img{
+#socials img {
     width: 3rem;
 }
 
-#socials div:not(.neonLights){
+#socials div:not(.neonLights) {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
