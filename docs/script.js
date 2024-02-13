@@ -31,7 +31,7 @@ const addToHtml = (apiData) => {
 // Hamburgermenu
 
 const hamburgerOpen = document.querySelector('header #navigation a:first-child');
-const hamburgerSluiten = document.querySelector('header nav > a')
+const hamburgerSluiten = document.querySelectorAll('header nav a')
 const navigationList = document.querySelector('header nav');
 
 hamburgerOpen.addEventListener('click', () => {
@@ -40,11 +40,11 @@ hamburgerOpen.addEventListener('click', () => {
     navigationList.setAttribute('aria-hidden', 'false');
 })
 
-hamburgerSluiten.addEventListener('click', () => {
+hamburgerSluiten.forEach(item => item.addEventListener('click', () => {
     navigationList.style.transform = 'translateX(50rem)';
     hamburgerOpen.setAttribute('aria-expanded', 'false');
     navigationList.setAttribute('aria-hidden', 'true');
-})
+}))
 
 
 // intersection observer api
