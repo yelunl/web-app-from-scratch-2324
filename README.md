@@ -1,4 +1,5 @@
 # About me page
+Process can be found in the wiki!
 ## Description
 Welcome this is an about me page of Yeliz Unlu. Here you can read information about me, my skills and more. You can [find this website online](https://yelunl.github.io/web-app-from-scratch-2324/)
 
