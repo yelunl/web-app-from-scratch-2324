@@ -140,6 +140,7 @@ article {
     }
 }
 
+/* header */
 header #headingOne {
     width: 100%;
     display: flex;
@@ -152,6 +153,7 @@ header #headingOne div {
     width: 100%;
 }
 
+/* navigation */
 header #navigation {
     display: flex;
     flex-direction: column;
@@ -239,6 +241,7 @@ h2>span>span {
     animation: blink1 3s infinite;
 }
 
+/* blinking animation */
 @keyframes blink1 {
     78%,
     81%,
