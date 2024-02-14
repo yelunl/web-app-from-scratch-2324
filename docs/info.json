@@ -5,10 +5,10 @@
   "age": 24,
   "city": "Zaandam",
   "hobbies": ["movies", "fitness"],
-  "truthAndLies": ["", "", ""],
+  "truthAndLies": ["I used to play korfball", "I can play the piano", "I like mushroom soup "],
   "favoritePokemon": "Eevee",
   "favoritePokemonAvatar": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/133.png",
-  "bio": "Hallo ik ben Yeliz, ....",
+  "bio": "My name is Yeliz Unlu my hobbies are fitness, watching movies and series. I enjoy going outside taking a walk in nature. I study CMD and hopefully become a front-end developer one day.",
   "stats": [
     { "title": "HTML", "value": 80 },
     { "title": "CSS", "value": 70 },
@@ -24,9 +24,8 @@
   "weaknesses": ["Procrastination", "Perfectionist"],
   "habitat": [
     { "title": "Home", "value": "Zaandam" },
-    { "title": "GitHub", "value": "https" },
-    { "title": "LinkedIn", "value": "https" },
-    { "title": "Twitter", "value": "https" },
-    { "title": "Instagram", "value": "https" }
+    { "title": "GitHub", "value": "https://github.com/yelunl" },
+    { "title": "LinkedIn", "value": "https://www.linkedin.com/in/yeliz-unlu-709588151/" },
+    { "title": "Instagram", "value": "https://www.instagram.com/yeliz135/" }
   ]
 }
