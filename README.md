@@ -1,6 +1,6 @@
 # About me page
 ## Description
-Welcome this is an about me page of Yeliz Unlu. Here you can read information about me, my skills and more. You can [find this website online](yelunl.github.io/web-app-from-scratch-2324/)
+Welcome this is an about me page of Yeliz Unlu. Here you can read information about me, my skills and more. You can [find this website online](https://yelunl.github.io/web-app-from-scratch-2324/)
 
 <!-- Add a nice poster image here at the end of the week, showing off your shiny frontend 📸 -->
 <img width="565" alt="Screenshot 2024-02-14 at 10 13 46" src="https://github.com/yelunl/web-app-from-scratch-2324/assets/112821013/12ed5cdc-395b-493e-ba20-5bc791cfb893">

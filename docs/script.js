@@ -2,7 +2,6 @@ const callApi = async () => {
     try {
         const response = await fetch('https://webapp-server-mocha.vercel.app');
         const jsonResponse = await response.json();
-        console.log(jsonResponse);
         addToHtml(jsonResponse);
 
     } catch(err) {
